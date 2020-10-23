@@ -1,4 +1,4 @@
-<center><font size=6>紫外-可见光谱仪 实验数据分析</font></center>
+<div align='center' ><font size=6>紫外-可见光谱仪 实验数据分析</font></div>
 
 <center>18377087 181911班 蔡晓亿</center>
 
@@ -165,7 +165,9 @@ for i in range(3):
     plt.plot(np.linspace(1,5,500),[0]*500,color='k')
     plt.xlim(1.5,4.2)
     plt.ylim(0,np.max(y))
-    plt.text(line.roots,0.001,s='$E_g=%.2f$'%line.roots[0],fontdict={'size':15})
+    plt.xlabel(r'$h\nu(eV)$')
+    plt.ylabel(r'$\alpha h\nu(eV/m)$')
+    plt.text(line.roots,0.001,s='$E_g=%.2feV$'%line.roots[0],fontdict={'size':15})
     plt.grid()
 plt.show()
 ```
@@ -188,11 +190,11 @@ plt.show()
     
 
 
-当薄膜是单层膜时，垂直入射的情况下，透射率为[<sup>1</sup>](#refer-anchor-1)：
+当薄膜是单层膜时，垂直入射的情况下，透射率为[<sup>[1]</sup>](#refer-anchor-1)：
 $$
 T=\frac{n_2}{n_0}\frac{t^2}{1+r^2-2r\cos{\frac{4\pi n_1d_1}{\lambda}}}
 $$
-则透过的光强度为薄膜厚度$n_1d_1$的函数，当$n_1d_1$等于$\frac14\lambda$的倍数时，透射率会出现极值。
+则透过的光强度为薄膜厚度$n_1d_1$的函数，当$n_1d_1$等于$\frac\lambda4$的倍数时，透射率会出现极值。
 如果薄膜的厚度较厚，薄膜的几何厚度可以从两个相邻的极值波长来求得。假设$\lambda_1$和$\lambda_2$是两个相邻的极值波长$(\lambda_1>\lambda_2)$，由$nd=\frac{(2m+1)\lambda_1}4=\frac{[2(m+1)+1]\lambda_2}4$可以得到
 $$
 d=\frac{\lambda_1\lambda_2}{2\pi(\lambda_1-\lambda_2)}
@@ -218,3 +220,4 @@ $$
 ## 参考文献
 
 <div id="refer-anchor-1"></div>- [1]张慧萍. 光学薄膜厚度及性能的测试[D].南京理工大学,2013.
+
