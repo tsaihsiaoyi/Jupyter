@@ -1,4 +1,4 @@
-<div align='center' ><font size='40'>紫外-可见光谱仪 实验数据分析</font></div>
+<center><font size=6>紫外-可见光谱仪 实验数据分析</font></center>
 
 <center>18377087 181911班 蔡晓亿</center>
 
@@ -61,9 +61,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_4_0.svg)
-    
+​    
 
 
 
@@ -86,9 +86,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_5_0.svg)
-    
+​    
 
 
 ## 分光光度计测量半导体禁带宽度
@@ -125,9 +125,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_8_0.svg)
-    
+​    
 
 
 
@@ -171,19 +171,19 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_9_0.svg)
-    
+​    
 
 
 
-    
+
 ![svg](Fenguang_files/Fenguang_9_1.svg)
     
 
 
 
-    
+
 ![svg](Fenguang_files/Fenguang_9_2.svg)
     
 
@@ -218,4 +218,3 @@ $$
 ## 参考文献
 
 <div id="refer-anchor-1"></div>- [1]张慧萍. 光学薄膜厚度及性能的测试[D].南京理工大学,2013.
-
