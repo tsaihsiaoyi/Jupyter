@@ -61,9 +61,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_4_0.svg)
-    
+​    
 
 
 
@@ -86,9 +86,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_5_0.svg)
-    
+​    
 
 
 ## 分光光度计测量半导体禁带宽度
@@ -125,9 +125,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_8_0.svg)
-    
+​    
 
 
 
@@ -173,19 +173,19 @@ plt.show()
 ```
 
 
-    
+​    
 ![svg](Fenguang_files/Fenguang_9_0.svg)
-    
+​    
 
 
 
-    
+
 ![svg](Fenguang_files/Fenguang_9_1.svg)
     
 
 
 
-    
+
 ![svg](Fenguang_files/Fenguang_9_2.svg)
     
 
