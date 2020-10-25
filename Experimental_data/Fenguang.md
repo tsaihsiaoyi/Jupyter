@@ -61,9 +61,9 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_4_0.svg)
-​    
+    
 
 
 
@@ -77,7 +77,7 @@ for i in range(1,5):
     fit=np.polyfit(y_0,y_1,1)
     result.append(fit)
     res=np.poly1d(fit)
-    r2=sum((res(y_0)-y_1)**2)
+    r2=sum((res(y_0)-y_1)**2)/len(y_1)
     plt.plot(np.linspace(0,3,100),res(np.linspace(0,3,100)),label=name_lis[i]+' '*5+'$R^2='+'%E'%r2+'$',color=color[i])
     plt.text(max(y_0),max(y_1)-0.05,'$%.3G'%fit[0]+('*x+' if fit[1]>0 else '*x')+'%.3G'%fit[1]+'$')
     plt.plot(y_0,y_1,'.',color='k',markersize=5)
@@ -86,9 +86,9 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_5_0.svg)
-​    
+    
 
 
 ## 分光光度计测量半导体禁带宽度
@@ -125,9 +125,9 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_8_0.svg)
-​    
+    
 
 
 
@@ -149,7 +149,7 @@ for i in range(3):
     d2=lambda2*lambda3/(2*np.pi*(lambda3-lambda2))
     d_avg=np.average([d1,d2])
     plt.title('$%s\ \ \ d=%.2fnm$'%(name_lis_2[i],d_avg))
-    a_i=-np.log(xy[1]/100)/d_avg
+    a_i=-np.log(xy[1]/100)*1e9/d_avg
     y=a_i*constants.h*constants.c/x/1e-9/constants.eV
     x=constants.h*constants.c/x/1e-9/constants.eV
     x=np.delete(x,np.where(y==np.inf))
@@ -173,19 +173,19 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_9_0.svg)
-​    
+    
 
 
 
-
+    
 ![svg](Fenguang_files/Fenguang_9_1.svg)
     
 
 
 
-
+    
 ![svg](Fenguang_files/Fenguang_9_2.svg)
     
 
