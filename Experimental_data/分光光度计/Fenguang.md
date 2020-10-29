@@ -61,9 +61,9 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_4_0.svg)
-​    
+    
 
 
 
@@ -86,9 +86,9 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_5_0.svg)
-​    
+    
 
 
 ## 分光光度计测量半导体禁带宽度
@@ -125,17 +125,17 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_8_0.svg)
-​    
+    
 
 
 
 ```python
 adjust_lis=[
-    lambda x:np.logical_and(3.2<=x,x<=3.9),
-    lambda x:3.7<=x,
-    lambda x:3.7<=x
+    lambda x:np.logical_and(3.5<=x,x<=4),
+    lambda x:3.8<=x,
+    lambda x:3.8<=x
 ]
 for i in range(3):
     plt.figure(figsize=[10,5])
@@ -153,7 +153,7 @@ for i in range(3):
     y=a_i*constants.h*constants.c/x/1e-9/constants.eV
     x=constants.h*constants.c/x/1e-9/constants.eV
     x=np.delete(x,np.where(y==np.inf))
-    y=np.delete(y,np.where(y==np.inf))
+    y=np.delete(y,np.where(y==np.inf))**2
     plt.plot(x,y)
     xi=x[np.where(adjust_lis[i](x))]
     yi=y[np.where(adjust_lis[i](x))]
@@ -173,19 +173,19 @@ plt.show()
 ```
 
 
-​    
+    
 ![svg](Fenguang_files/Fenguang_9_0.svg)
-​    
+    
 
 
 
-
+    
 ![svg](Fenguang_files/Fenguang_9_1.svg)
     
 
 
 
-
+    
 ![svg](Fenguang_files/Fenguang_9_2.svg)
     
 
@@ -218,6 +218,5 @@ $$
 在上述计算中，因为$TiO_2$的函数图像波动并不明显，所以极值的寻找不够准确，导致最后的光学厚度d误差较大，但这不影响$E_g$的计算，对于陡峭部分的外推与x轴的交点不随d的变化而改变。
 
 ## 参考文献
-
 <div id="refer-anchor-1"></div>- [1]张慧萍. 光学薄膜厚度及性能的测试[D].南京理工大学,2013.
 
