@@ -62,7 +62,7 @@ plt.show()
 
 
     
-![svg](Fenguang_files/Fenguang_4_0.svg)
+![png](Fenguang_files/Fenguang_4_0.png)
     
 
 
@@ -87,7 +87,7 @@ plt.show()
 
 
     
-![svg](Fenguang_files/Fenguang_5_0.svg)
+![png](Fenguang_files/Fenguang_5_0.png)
     
 
 
@@ -126,7 +126,7 @@ plt.show()
 
 
     
-![svg](Fenguang_files/Fenguang_8_0.svg)
+![png](Fenguang_files/Fenguang_8_0.png)
     
 
 
@@ -166,27 +166,30 @@ for i in range(3):
     plt.xlim(1.5,4.2)
     plt.ylim(0,np.max(y))
     plt.xlabel(r'$h\nu(eV)$')
-    plt.ylabel(r'$\alpha h\nu(eV/m)$')
-    plt.text(line.roots,0.001,s='$E_g=%.2feV$'%line.roots[0],fontdict={'size':15})
+    plt.ylabel(r'$(\alpha h\nu)^2(eV^2/m^2)$')
+    plt.text(line.roots,0.003,s='$E_g=%.2feV$'%line.roots[0],fontdict={'size':15})
     plt.grid()
 plt.show()
 ```
 
-
-    
-![svg](Fenguang_files/Fenguang_9_0.svg)
-    
+    /root/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:18: RuntimeWarning: divide by zero encountered in log
 
 
 
     
-![svg](Fenguang_files/Fenguang_9_1.svg)
+![png](Fenguang_files/Fenguang_9_1.png)
     
 
 
 
     
-![svg](Fenguang_files/Fenguang_9_2.svg)
+![png](Fenguang_files/Fenguang_9_2.png)
+    
+
+
+
+    
+![png](Fenguang_files/Fenguang_9_3.png)
     
 
 
@@ -211,11 +214,23 @@ $$
 
 |半导体物质|$d(nm)$|$E_g(eV)$|
 |:----|:---|:---|
-|$TiO_2$|780.80|3.06|
-|$WO_3$|373.93|3.68|
-|$BiVO_4$|440.36|3.61|
+|$TiO_2$|780.80|3.43|
+|$WO_3$|373.93|3.84|
+|$BiVO_4$|440.36|3.80|
 
 在上述计算中，因为$TiO_2$的函数图像波动并不明显，所以极值的寻找不够准确，导致最后的光学厚度d误差较大，但这不影响$E_g$的计算，对于陡峭部分的外推与x轴的交点不随d的变化而改变。
+
+## 思考题
+1. 使用比色皿时要注意什么？  
+    比色皿透光侧壁不能用手拿，任何脏物和划伤都会显著降低比色皿的透光特性
+2. 对于无色溶液如何用该分光光度计测浓度？  
+    加入显色剂，产生有色溶液。
+3. 仪器为什么要预热？  
+    所有电子仪器都存在温漂问题，温度漂移一般是指，环境温度变化时会引起晶体管参数的变化，这样会造成静态工作点的不稳定，使电路动态参数不稳定，甚至使电路无法正常工作。
+4. 每次波长改动后为什么仪器需重新调整？  
+    改变波长可能引起透明样品的透射率不等于100%，出于调整基线的需求，所以需要调整。
+5. 同组测量为什么要使用同型号的比色皿？  
+    保证光学厚度相等。
 
 ## 参考文献
 <div id="refer-anchor-1"></div>- [1]张慧萍. 光学薄膜厚度及性能的测试[D].南京理工大学,2013.
