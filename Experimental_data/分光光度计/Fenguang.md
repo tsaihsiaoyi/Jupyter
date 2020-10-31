@@ -62,7 +62,7 @@ plt.show()
 
 
     
-![png](Fenguang_files/Fenguang_4_0.png)
+![svg](Fenguang_files/Fenguang_4_0.svg)
     
 
 
@@ -87,7 +87,7 @@ plt.show()
 
 
     
-![png](Fenguang_files/Fenguang_5_0.png)
+![svg](Fenguang_files/Fenguang_5_0.svg)
     
 
 
@@ -126,7 +126,7 @@ plt.show()
 
 
     
-![png](Fenguang_files/Fenguang_8_0.png)
+![svg](Fenguang_files/Fenguang_8_0.svg)
     
 
 
@@ -172,24 +172,21 @@ for i in range(3):
 plt.show()
 ```
 
-    /root/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:18: RuntimeWarning: divide by zero encountered in log
-
-
 
     
-![png](Fenguang_files/Fenguang_9_1.png)
+![svg](Fenguang_files/Fenguang_9_0.svg)
     
 
 
 
     
-![png](Fenguang_files/Fenguang_9_2.png)
+![svg](Fenguang_files/Fenguang_9_1.svg)
     
 
 
 
     
-![png](Fenguang_files/Fenguang_9_3.png)
+![svg](Fenguang_files/Fenguang_9_2.svg)
     
 
 
