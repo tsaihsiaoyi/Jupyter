@@ -100,16 +100,4 @@ plt.show()
 
 
 
-```python
 
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
