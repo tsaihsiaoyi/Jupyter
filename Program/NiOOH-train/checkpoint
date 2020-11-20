@@ -1,0 +1,2 @@
+model_checkpoint_path: "/machine/work_dir/09990768-c531-458c-8938-77c9b174c8d1/train/model.ckpt"
+all_model_checkpoint_paths: "/machine/work_dir/09990768-c531-458c-8938-77c9b174c8d1/train/model.ckpt"
